@@ -1,0 +1,28 @@
+/* src/components/BookList.css */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Responsive columns */
+  gap: 15px; /* Space between items */
+}
+
+.book-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+}
+
+.book-cover {
+  max-width: 100%; /* Responsive cover image */
+  height: auto;
+}
